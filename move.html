@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Homepage </title>
+    <meta charset = "utf-8" />
+    <link rel="stylesheet" href="stylevicky.css">
+    <script type="text/javascript" src="vicky.js"></script>
+</head>
+<body>
+ <ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a class="active" href="move.html">Move</a></li>
+  <li><a href="hover.html">Hover</a></li>
+  <li><a href="faqs.html">FAQs</a></li> 
+</ul> 
+   <img STYLE=" TOP:5px; LEFT:270px; WIDTH:70px; HEIGHT:70px" SRC="images/Jail Bars.png" id= "jail">
+    <img src="images/Vicky.png" width="60" height="60" id="vicky">
+    <p>Click and hold the buttons below to move vicky to jail</p>
+    <input type="button" value="Left"  onmousedown="move(-10);" onmouseup="stop()"/>
+    <input type="button" value="Right" onmousedown="move( 10);" onmouseup="stop()"/>
+</body>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Homepage </title>
+    <meta charset = "utf-8" />
+    <link rel="stylesheet" href="gallery.css">
+    <script type="text/javascript" src="gallery.js"></script>
+</head>
+<body>
+ <ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a class="current" href="gallery.html">Gallery</a></li>
+  <li><a href="move.html">Move</a></li>
+  <li><a href="hover.html">Hover</a></li>
+  <li><a href="faqs.html">FAQs</a></li> 
+</ul> 
+
+<div style="text-align:center">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="images/Episode Ex. 1.jpg" alt="Write what you want about the episode here" style="width:100%" 
+      onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Episode Ex. 2.png" alt="Write what you want about the episode here" style="width:100%" 
+      onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Episode Ex. 3.jpg" alt="Write what you want about the episode here" style="width:100%" 
+      onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Episode Ex. 4.jpeg" alt="Write what you want about the episode here" style="width:100%" 
+      onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" 
+    class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:80%">
+  <div id="imgtext"></div>
+</div>
+</body>
+</html>
+
+
